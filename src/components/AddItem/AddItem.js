@@ -28,17 +28,21 @@ export default class AddItem extends Component {
         className='item-add-form d-flex'
         onSubmit={this.onSubmit}
       >
-        <input
-          type='text'
-          className='form-control'
-          placeholder='What needs to be done'
-          style={{ marginRight: '3px' }}
-          onChange={this.onLabelChange}
-          value={this.state.label}
-        />
-        <button className='btn btn-outline-secondary'>
-          Add Item
-        </button>
+        <div className="col-auto">
+          <input
+            type='text'
+            className='form-control'
+            placeholder='What needs to be done'
+            style={{ marginRight: '3px' }}
+            onChange={this.onLabelChange}
+            value={this.state.label}
+          />
+        </div>
+        <div className="col-auto">
+          <button className='btn btn-outline-secondary'>
+            Add Item
+          </button>
+        </div>
       </form>
     )
   }
